@@ -1,0 +1,96 @@
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button, input, select {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+img, video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th {
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Shadows Into Light";
+  src: url(../police/ShadowsIntoLight-Regular.ttf);
+}
+header {
+  display: flex;
+  justify-content: center;
+  background-color: #cccccc;
+}
+header a {
+  text-decoration: none;
+  color: black;
+}
+header a #title_block {
+  width: 300px;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+header a #title_block #title {
+  font-family: "Shadows Into Light";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+header a #title_block #title h1 {
+  font-size: xxx-large;
+}
+header a #title_block #logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+header a #title_block #logo i {
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+header #panier {
+  position: absolute;
+  right: 10px;
+  top: 30px;
+}
+header #panier a {
+  text-decoration: none;
+}
+header #panier a i {
+  color: black;
+}
+
+/*# sourceMappingURL=style.css.map */
