@@ -1,5 +1,10 @@
-const buttonAdd = document.getElementsByClassName('add');
+var buttonAdd = document.getElementsByClassName('add');
 
-buttonAdd.addEventListener('click', function (event) {
+function addFunction () {
     alert('Element ajouté au panier !');
-  });
+}
+
+for (i=0; i < buttonAdd.length; i++){
+    buttonAdd[i].addEventListener('click', addFunction());
+}
+

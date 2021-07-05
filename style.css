@@ -103,7 +103,13 @@ main h2 {
   font-size: larger;
   text-align: center;
 }
-main .product {
+main #list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+main #list .product {
   height: 400px;
   width: 250px;
   padding: 15px;
@@ -113,17 +119,17 @@ main .product {
   align-items: center;
   border: 2px solid black;
 }
-main .product .img_wrap {
+main #list .product .img_wrap {
   width: auto;
   height: 250px;
 }
-main .product .img_wrap img {
+main #list .product .img_wrap img {
   object-fit: cover;
 }
-main .product .price {
+main #list .product .price {
   font-weight: bold;
 }
-main .product .add {
+main #list .product .add {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -132,7 +138,7 @@ main .product .add {
   border: 1px solid black;
   border-radius: 2rem;
 }
-main .product .add:hover {
+main #list .product .add:hover {
   cursor: pointer;
   background-color: grey;
   color: white;
