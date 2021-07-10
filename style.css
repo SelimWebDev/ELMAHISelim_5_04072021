@@ -125,7 +125,7 @@ main #list .product h3 {
 }
 main #list .product .img_wrap {
   width: auto;
-  height: 120px;
+  height: 200px;
 }
 main #list .product .img_wrap img {
   object-fit: cover;
