@@ -113,18 +113,27 @@ main #list .product {
   height: 400px;
   width: 250px;
   padding: 15px;
+  margin-bottom: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   border: 2px solid black;
 }
+main #list .product h3 {
+  font-weight: bold;
+}
 main #list .product .img_wrap {
   width: auto;
-  height: 250px;
+  height: 120px;
 }
 main #list .product .img_wrap img {
   object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+main #list .product .desc {
+  text-align: center;
 }
 main #list .product .price {
   font-weight: bold;
