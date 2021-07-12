@@ -1,1 +1,0 @@
-/* fonction ajouter au panier quand on clique sur le produit */
