@@ -1,0 +1,40 @@
+@import "../base/reset.scss";
+
+@import "../layout/header.scss";
+
+@import "../base/title.scss";
+
+@import "../composants/add.scss";
+
+main {
+    & .product {
+        margin-top: 22px;
+        display: flex;
+        justify-content: space-around;
+
+        & .img_wrap {
+            width: 35%;
+            height: 500px;
+            & img {
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        & .block_text {
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            & .desc {
+
+            }
+            & .price {
+                font-weight: bold;
+            }
+        }
+    }
+}
+

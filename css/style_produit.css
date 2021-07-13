@@ -43,21 +43,6 @@ td, th {
   padding: 0;
 }
 
-h1 {
-  font-size: xxx-large;
-}
-
-h2 {
-  margin-top: 15px;
-  margin-bottom: 15px;
-  font-size: larger;
-  text-align: center;
-}
-
-h3 {
-  font-weight: bold;
-}
-
 @font-face {
   font-family: "Shadows Into Light";
   src: url(../police/ShadowsIntoLight-Regular.ttf);
@@ -108,6 +93,21 @@ header #panier a i {
   color: black;
 }
 
+h1 {
+  font-size: xxx-large;
+}
+
+h2 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: larger;
+  text-align: center;
+}
+
+h3 {
+  font-weight: bold;
+}
+
 /*bouton*/
 .add {
   display: flex;
@@ -124,45 +124,29 @@ header #panier a i {
   color: white;
 }
 
-main {
-  margin-left: 15px;
-  margin-right: 15px;
-}
-main #list {
+main .product {
+  margin-top: 22px;
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
-  flex-wrap: wrap;
 }
-main #list .product {
+main .product .img_wrap {
+  width: 35%;
   height: 500px;
-  width: 300px;
-  padding: 15px;
-  margin-bottom: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  border: 2px solid black;
 }
-main #list .product .img_wrap {
-  width: auto;
-  height: 200px;
-}
-main #list .product .img_wrap img {
+main .product .img_wrap img {
   object-fit: cover;
   width: 100%;
   height: 100%;
 }
-main #list .product .desc {
-  text-align: center;
+main .product .block_text {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
-main #list .product .price {
+main .product .block_text .price {
   font-weight: bold;
 }
-main #list .product a {
-  text-decoration: none;
-  color: black;
-}
 
-/*# sourceMappingURL=style_index.css.map */
+/*# sourceMappingURL=style_produit.css.map */

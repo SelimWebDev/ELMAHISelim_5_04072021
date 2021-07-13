@@ -12,9 +12,10 @@ window.addEventListener('load', function () {
     // RECUPERATION ET ECRITURE DE TOUT LES PRODUITS
 
     .then(function(value) {     // recuperation des données
+      console.log(value);
       var nbProduit = value.length;
 
-      var htmlOneCard = '<div class="product"><div class="img_wrap"><img class="product_img"/></div><h3></h3><span class="desc">Une ancienne caméra</span><span class="price"></span><div class="add">Voir le produit</div></div>';
+      var htmlOneCard = '<div class="product"><div class="img_wrap"><img class="product_img"/></div><h3></h3><span class="desc">Une ancienne caméra</span><span class="price"></span><a href="produit.html"><div class="add">Voir le produit</div></a></div>';
       var htmlFullCard = "";
 
       function buildAndWriteHtml (){

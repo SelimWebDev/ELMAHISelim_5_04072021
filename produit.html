@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Orinocam</title>
 
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="./css/style_produit.css"/>
 
-    <script src="./js/get_product_by_id.js"></script>
+    <script src="./js/addToCart.js"></script>
+    <script src="./js/reqByIdAndWriteHtml.js"></script>
     <script src="https://kit.fontawesome.com/d5ff2cdc84.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -25,11 +26,19 @@
         </div>
     </header>
     <main>
-        <div id="detailProduct">
-            <div class="blockText">
-                <h2>Titre</h2>>
-                <span>description</span>
-                
+        <div class="product">
+            <div class="img_wrap">
+                <img>
+            </div>
+            <div class="block_text">
+                <h2>Titre</h2>
+                <span class="desc"></span>
+                <span class="price"></span>
+                <div>
+                    <label for="option-select">Choisissez votre lentille :</label>
+                    <select class="liste" id="option-select"></select>
+                </div>
+                <div class="add" onclick="addToCart()">Ajouter au panier</div>
             </div>
         </div>
     </main>

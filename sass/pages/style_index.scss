@@ -1,17 +1,14 @@
 @import "../base/reset.scss";
 
+@import "../base/title.scss";
+
 @import "../layout/header.scss";
+
+@import "../composants/add.scss";
 
 main {
     margin-left: 15px;
     margin-right: 15px;
-
-    & h2 {
-        margin-top: 15px;
-        margin-bottom: 15px;
-        font-size: larger;
-        text-align: center;
-    }
 
     & #list {
         display: flex;
@@ -31,11 +28,6 @@ main {
             align-items: center;
             border: 2px solid black;
 
-            & h3 {
-                font-weight: bold;
-            }
-    
-    
             & .img_wrap {  
                 width: auto;
                 height: 200px;
@@ -54,34 +46,11 @@ main {
             & .price {
                 font-weight: bold;
             }
-    
-            /*& a {
+
+            & a {
                 text-decoration: none;
-                color: black;*/
-
-                & .add {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-        
-                    width: 150px;
-                    height: 30px;
-        
-                    border: 1px solid black;
-                    border-radius: 2rem;
-        
-                    &:hover {
-                        cursor: pointer;
-                        background-color: grey;
-                        color: white;
-                    }
-                }
-
-           /* }*/
-
-            
+                color: black;
+            }
         }
     }
-
-    
 }
