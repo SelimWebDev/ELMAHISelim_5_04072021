@@ -44,6 +44,7 @@ window.addEventListener('load', function (){
             }
 
             listeOption[0].innerHTML = fullOptionHtml;  // On écris fulloption en html
+            console.log(listeOption[0])
 
 
 

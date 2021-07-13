@@ -39,13 +39,19 @@ window.addEventListener('load', function () {
       var prix_array = document.getElementsByClassName("price");
       
       for (var j=0; j < nbProduit; j++){
-        add_array[j].setAttribute("id", value[j]._id)
-        add_array[j].setAttribute("onclick", "saveSelectedId(this)")
+        add_array[j].setAttribute("id", value[j]._id)           // set attribut du bouton pour transmettre les valeur à la fonction onclick
+        add_array[j].setAttribute("price", value[j].price);
+        add_array[j].setAttribute("name", value[j].name);
+        add_array[j].setAttribute("image", value[j].imageUrl);
+        add_array[j].setAttribute("desc", value[j].description);
+        add_array[j].setAttribute("onclick", "showSelected(this)")
+
         img_array[j].setAttribute("src", value[j].imageUrl);    //set attribut  pour chaque image 
         img_array[j].setAttribute("alt", value[j].description);
+
         titre_array[j].textContent = value[j].name;           // set contenu de l'html avec les données
         description_array[j].textContent = value[j].description;
-        prix_array[j].textContent = value[j].price + " €";      
+        prix_array[j].textContent = value[j].price + " €";     
       }
 
       return value;

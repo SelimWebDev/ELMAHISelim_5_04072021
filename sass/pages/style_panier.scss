@@ -1,0 +1,56 @@
+@import "../base/reset.scss";
+
+@import "../base/title.scss";
+
+@import "../layout/header.scss";
+
+@import "../composants/add.scss";
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & #recap {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    
+        & table {
+            width: 80%;
+            border-style: solid;
+            border-width: 5px;
+            border-color: black;
+            background-color: #d9d9d9;
+            width: 80%;
+            height: 500px;
+            text-align: center;
+            
+            & tr {
+                border-style: solid;
+                border-width: 1px;
+                border-color: black;
+            }
+    
+            & th {
+                height: 50px;
+                border-style: solid;
+                border-width: 1px;
+                border-color: black;
+            }
+    
+            & td {
+                border-style: solid;
+                border-width: 1px;
+                border-color: black;
+            }
+    
+            & #prix_total {
+                font-weight: bold;
+            }
+            
+        }
+    }
+}

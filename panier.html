@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Orinocam</title>
 
-    <link rel="stylesheet" href="style.css"/>
-    <script src="./js/removeAll.js"></script>
+    <link rel="stylesheet" href="./css/style_panier.css"/>
+    <script src="./js/cartFunction.js"></script>
+    <script src="./js/panierWriteHtml.js"></script>
     <script src="https://kit.fontawesome.com/d5ff2cdc84.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -24,7 +25,24 @@
         </div>
     </header>
     <main>
-        <div class="reset" onclick="removeAll()">Supprimer tout le panier</div>
+        <div id="recap">
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">Nom</th>
+                        <th scope="col">Prix</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+                <tfoot>
+                    <th scope="row">Total</th>
+                    <td id="prix_total">8000</td>
+                </tfoot>
+            </table>
+        </div>
+        <div class="add" onclick="removeAll()">Supprimer tout le panier</div>
+        <div class="add">Commander</div>
     </main>
     <footer></footer>
 </body>
