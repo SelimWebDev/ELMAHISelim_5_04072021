@@ -1,6 +1,10 @@
 window.addEventListener('load', function (){
 
-    var idSelected = localStorage.getItem("id_selected"); // id enregitré par la page index
+    //var idSelected = localStorage.getItem("id_selected"); // id enregitré par la page index
+
+    var url_string = window.location.href;
+    var url = new URL(url_string);
+    var idSelected = url.searchParams.get("id");
 
     var name;
     var description;
@@ -15,7 +19,6 @@ window.addEventListener('load', function (){
             }
         })
         .then(function(value){
-            console.log(value);
 
             name = value.name;
             description = value.description;
@@ -44,12 +47,18 @@ window.addEventListener('load', function (){
             }
 
             listeOption[0].innerHTML = fullOptionHtml;  // On écris fulloption en html
-            console.log(listeOption[0])
 
 
 
         })
         .catch(function(err) {
             // Une erreur est survenue
+            var bodyContain = document.getElementsByTagName("body");
+            bodyContain[0].style.filter = "blur(3px)";
+
+            setInterval(function(){
+                window.alert("Cet ID n'existe pas");
+                window.location.href = "index.html";
+            }, 1000);
         });
 })

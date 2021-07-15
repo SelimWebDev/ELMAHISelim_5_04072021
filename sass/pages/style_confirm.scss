@@ -1,0 +1,26 @@
+@import "../base/reset.scss";
+
+@import "../base/title.scss";
+
+@import "../layout/header.scss";
+
+@import "../composants/add.scss";
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & #block {
+        margin-top: 50px;
+
+        & span {
+            display: block;
+            text-align: center;
+
+            & div {
+                font-weight: bold;
+            }
+        }
+    }
+}

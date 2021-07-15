@@ -6,8 +6,12 @@
     <title>Orinocam</title>
 
     <link rel="stylesheet" href="./css/style_panier.css"/>
+
+    <script src="./js/Object/Contact.js"></script>
+    <script src="./js/reqPostCommand.js"></script>
     <script src="./js/cartFunction.js"></script>
     <script src="./js/panierWriteHtml.js"></script>
+
     <script src="https://kit.fontawesome.com/d5ff2cdc84.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -21,28 +25,43 @@
         <div id="panier">
             <a href="panier.html">
                 <i class="fas fa-shopping-basket fa-2x"></i>
+                <span id="icone-number"></span>
             </a>
         </div>
     </header>
     <main>
-        <div id="recap">
-            <table>
-                <thead>
-                    <tr>
-                        <th scope="col">Nom</th>
-                        <th scope="col">Prix</th>
-                    </tr>
-                </thead>
-                <tbody>
-                </tbody>
-                <tfoot>
-                    <th scope="row">Total</th>
-                    <td id="prix_total">8000</td>
-                </tfoot>
-            </table>
+        <div id="block">
+            <div id="recap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">Nom</th>
+                            <th scope="col">Prix</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                    <tfoot>
+                        <th scope="row">Total</th>
+                        <td id="prix_total"></td>
+                    </tfoot>
+                </table>
+            </div>
+            <form id="formulaire">
+                <label for="nom">Nom : </label>
+                <input type="text" name="nom" id="nom" required>
+                <label for="prenom">Prenom : </label>
+                <input type="text" name="prenom" id="prenom" required>
+                <label for="adress">Adresse de livraison : </label>
+                <input type="text" name="adress" id="adress" required>
+                <label for="ville">Ville : </label>
+                <input type="text" name="ville" id="ville" required>
+                <label for="mail">Email : </label>
+                <input type="email" name="mail" id="mail" required>
+                <button type="button" class="add" onclick="command()">Commander</button>
+            </form>
         </div>
         <div class="add" onclick="removeAll()">Supprimer tout le panier</div>
-        <div class="add">Commander</div>
     </main>
     <footer></footer>
 </body>

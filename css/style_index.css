@@ -99,13 +99,20 @@ header a #title_block #logo i {
 header #panier {
   position: absolute;
   right: 10px;
-  top: 30px;
+  top: 10px;
 }
 header #panier a {
   text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 header #panier a i {
-  color: black;
+  color: #332626;
+}
+header #panier a span {
+  color: white;
+  font-size: xxx-large;
 }
 
 /*bouton*/

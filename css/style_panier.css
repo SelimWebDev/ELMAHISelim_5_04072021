@@ -99,13 +99,20 @@ header a #title_block #logo i {
 header #panier {
   position: absolute;
   right: 10px;
-  top: 30px;
+  top: 10px;
 }
 header #panier a {
   text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 header #panier a i {
-  color: black;
+  color: #332626;
+}
+header #panier a span {
+  color: white;
+  font-size: xxx-large;
 }
 
 /*bouton*/
@@ -130,14 +137,19 @@ main {
   flex-direction: column;
   align-items: center;
 }
-main #recap {
+main #block {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+main #block #recap {
   width: 100%;
   display: flex;
   justify-content: center;
   margin-top: 50px;
   margin-bottom: 50px;
 }
-main #recap table {
+main #block #recap table {
   width: 80%;
   border-style: solid;
   border-width: 5px;
@@ -147,24 +159,28 @@ main #recap table {
   height: 500px;
   text-align: center;
 }
-main #recap table tr {
+main #block #recap table tr {
   border-style: solid;
   border-width: 1px;
   border-color: black;
 }
-main #recap table th {
+main #block #recap table th {
   height: 50px;
   border-style: solid;
   border-width: 1px;
   border-color: black;
 }
-main #recap table td {
+main #block #recap table td {
   border-style: solid;
   border-width: 1px;
   border-color: black;
 }
-main #recap table #prix_total {
+main #block #recap table #prix_total {
   font-weight: bold;
+}
+main #block #formulaire {
+  display: flex;
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=style_panier.css.map */
