@@ -8,19 +8,52 @@
 
 main {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    & #block {
+    & #block_text {
         margin-top: 50px;
+        margin-bottom: 50px;
 
         & span {
             display: block;
             text-align: center;
 
-            & div {
+            & #orderId {
+                font-weight: bold;
+                padding-top: 5px;
+                padding-bottom: 5px;
+            }
+
+            & #totalPrice {
+                display: inline;
                 font-weight: bold;
             }
+        }
+    }
+
+    & #icn_block {
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        animation: appears;
+        animation-duration: 2000ms;
+        
+
+        @keyframes appears {
+            0% {
+                transform: scale(0) rotate(180deg);
+            }
+            100% {
+                transform: scale(1) rotate(0deg);
+            }
+        }
+
+        & i {
+            color: #26af86;
         }
     }
 }

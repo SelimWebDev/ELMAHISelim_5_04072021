@@ -1,7 +1,9 @@
+// script JS ajout supprimer du panier et maj affichage icone
+
 var cartNumber;
 var iconeContain;
 
-function changeCart(){                                                  // function maj pour icone cart
+function changeCart(){                                                  // function maj pour icone panier
 
     window.addEventListener('load', function (){
         iconeContain = document.getElementById("icone-number");
@@ -17,13 +19,11 @@ function changeCart(){                                                  // funct
     })
 }
     
-
 changeCart()
 
-
-function addToCart(){
+function addToCart(){                                           // fonction ajouter au panier
          
-    var  oldCart = JSON.parse(localStorage.getItem("cart"))     // o recupere le cart du store et on le transforme en array
+    var  oldCart = JSON.parse(localStorage.getItem("cart"))     // on recupere le cart du store et on le transforme en array
     oldCart.push(localStorage.id_selected)                      // on y ajoute l'ID séléctionné du store
     localStorage.setItem("cart", JSON.stringify(oldCart))       // on transforme l'array en string et le renvoie au store
 
@@ -40,7 +40,7 @@ function addToCart(){
     iconeContain.textContent = cartNumber
 }
 
-function removeAll() {
+function removeAll() {                                          // fonction supprimer tout le panier
 
     var cartContain = document.getElementsByTagName("tbody")    // reset html du cart
     cartContain[0].innerHTML = ""

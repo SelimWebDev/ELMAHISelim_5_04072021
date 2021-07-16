@@ -54,7 +54,7 @@ window.addEventListener('load', function () {
 
         titre_array[j].textContent = value[j].name;           // set contenu de l'html avec les données
         description_array[j].textContent = value[j].description;
-        prix_array[j].textContent = value[j].price + " €";     
+        prix_array[j].textContent = value[j].price + " €";
       }
 
       return value;

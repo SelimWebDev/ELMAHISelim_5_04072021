@@ -137,48 +137,42 @@ main {
   flex-direction: column;
   align-items: center;
 }
-main #block {
+main #row {
   width: 100%;
   display: flex;
-  align-items: center;
-}
-main #block #recap {
-  width: 100%;
-  display: flex;
-  justify-content: center;
+  justify-content: space-around;
   margin-top: 50px;
   margin-bottom: 50px;
 }
-main #block #recap table {
-  width: 80%;
+main #row table {
+  width: 250px;
   border-style: solid;
   border-width: 5px;
   border-color: black;
   background-color: #d9d9d9;
-  width: 80%;
-  height: 500px;
   text-align: center;
 }
-main #block #recap table tr {
+main #row table tr {
   border-style: solid;
   border-width: 1px;
   border-color: black;
 }
-main #block #recap table th {
+main #row table th {
   height: 50px;
   border-style: solid;
   border-width: 1px;
   border-color: black;
 }
-main #block #recap table td {
+main #row table tbody td {
+  height: 150px;
   border-style: solid;
   border-width: 1px;
   border-color: black;
 }
-main #block #recap table #prix_total {
+main #row table #prix_total {
   font-weight: bold;
 }
-main #block #formulaire {
+main #row #formulaire {
   display: flex;
   flex-direction: column;
 }

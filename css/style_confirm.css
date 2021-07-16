@@ -134,18 +134,44 @@ header #panier a span {
 
 main {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-main #block {
+main #block_text {
   margin-top: 50px;
+  margin-bottom: 50px;
 }
-main #block span {
+main #block_text span {
   display: block;
   text-align: center;
 }
-main #block span div {
+main #block_text span #orderId {
   font-weight: bold;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+main #block_text span #totalPrice {
+  display: inline;
+  font-weight: bold;
+}
+main #icn_block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: appears;
+  animation-duration: 2000ms;
+}
+@keyframes appears {
+  0% {
+    transform: scale(0) rotate(180deg);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}
+main #icn_block i {
+  color: #26af86;
 }
 
 /*# sourceMappingURL=style_confirm.css.map */

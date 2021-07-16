@@ -1,3 +1,5 @@
+// script js qui écris l'HTML de la page confirm.html en fonction des données
+
 window.addEventListener('load', function(){
 
     var url_string = window.location.href; 
@@ -11,7 +13,7 @@ window.addEventListener('load', function(){
         totalPrice = totalPrice+priceConverted
     }
 
-    var elm = document.getElementById("block")          // on recupère l'elm HTML
+    var elm = document.getElementById("block_text")          // on recupère l'elm HTML
 
     var html = "<span>Votre commande n° <div id='orderId'>" + orderId + "</div> d'un montant total de <div id='totalPrice'>" + totalPrice + "</div> € à bien été prise en compte</span>"
 
