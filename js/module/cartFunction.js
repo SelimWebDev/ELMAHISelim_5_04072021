@@ -16,9 +16,6 @@ function changeCart(){                                                  // funct
             cartNumber = JSON.parse(localStorage.getItem("cart")).length
             iconeContain.textContent = cartNumber
         }
-
-        console.log(cartNumber)
-        console.log(iconeContain)
     })
 }
 

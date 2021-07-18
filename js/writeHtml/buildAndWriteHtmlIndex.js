@@ -1,6 +1,7 @@
 // fonction construire et ecrire l'HTML de la page index avec en parametre une reponse de la requete getAll
 
-function buildAndWriteHtmlIndex (value){
+async function buildAndWriteHtmlIndex (responseReq){
+  var value = await responseReq
   window.addEventListener("load", function(){
     var nbProduit = value.length; 
   

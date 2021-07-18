@@ -1,7 +1,6 @@
 async function buildAndWriteHtmlProduit(value){
     window.addEventListener('load', function() {
 
-        console.log("script write html")
         var name = value.name;
         var description = value.description;
         var price = value.price;

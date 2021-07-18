@@ -7,8 +7,6 @@
 
 function command(){
     var nomSaisie = document.getElementById("nom").value;                  // on récupère les valeur du formulaire
-    console.log(nomSaisie)
-    console.log(notEmpty(nomSaisie))
     var prenomSaisie = document.getElementById("prenom").value;
     var adresseSaisie = document.getElementById("adress").value;
     var villeSaisie = document.getElementById("ville").value;
@@ -42,7 +40,7 @@ function command(){
         .then(function(value){
             console.log(value)
 
-            window.location.href = "confirm.html?orderId=" + value.orderId + "&price="
+            window.location.href = "confirm.html?orderId=" + value.orderId
             
         })
         .catch(function(err){

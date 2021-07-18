@@ -6,8 +6,8 @@ async function reqGetOneId() {
     var reponse = await fetch("http://localhost:3000/api/cameras/" + idSelected) // requete GET au serveur
     if (reponse.ok) {                                                               // s
       var responseJson = await reponse.json()
-      console.log("resultat requete getId : " + reponse)
-      console.log("au format json : " + responseJson)
+      console.log("requete reussi : " + reponse.ok)
+      console.log("nom de la caméra recu : " + responseJson.name)
       return responseJson;
     }
     else {
