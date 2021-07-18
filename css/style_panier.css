@@ -176,5 +176,8 @@ main #row #formulaire {
   display: flex;
   flex-direction: column;
 }
+main #row #formulaire #mail {
+  margin-bottom: 20px;
+}
 
 /*# sourceMappingURL=style_panier.css.map */

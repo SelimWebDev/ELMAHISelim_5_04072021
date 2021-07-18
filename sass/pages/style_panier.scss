@@ -56,6 +56,10 @@ main {
         & #formulaire {
             display: flex;
             flex-direction: column;
+
+            & #mail {
+                margin-bottom: 20px;
+            }
         }
     }      
 }

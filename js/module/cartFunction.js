@@ -22,6 +22,9 @@ function changeCart(){                                                  // funct
     })
 }
 
+changeCart()
+
+//fonction associ a un bouton html
 function addToCart(){                                           // fonction ajouter au panier
          
     var  oldCart = JSON.parse(localStorage.getItem("cart"))     // on recupere le cart du store et on le transforme en array
@@ -41,6 +44,7 @@ function addToCart(){                                           // fonction ajou
     iconeContain.textContent = cartNumber
 }
 
+//fonction associé à un bouton html
 function removeAll() {                                          // fonction supprimer tout le panier
 
     var cartContain = document.getElementsByTagName("tbody")    // reset html du cart
@@ -64,5 +68,3 @@ function removeAll() {                                          // fonction supp
     iconeContain.textContent = cartNumber;
 
 }
-
-changeCart()

@@ -1,29 +1,9 @@
-var regleMail = new RegExp(/^([\w-\.]+)@((?:[\w]+\.)+)([a-zA-Z]{2,4})/i);
-
-function isValid(value,regle) {         // fonction teste si une valeur respecte une ragle regex
-    var valid = regle.test(value)
-
-    if (valid){
-        return true
-    }
-    else {
-        return false
-    }
-}
-
-function notEmpty (elm){
-    if (elm != ""){
-        return true
-    }
-    else {
-        return false
-    }
-}
 
 
 
 
-/* /_\ Fonction command appeller par le bouton de commande dans la page panier.html /_\ */
+
+/* /_\ Fonction command qui exexcute la requete POST && appeller par le bouton de commande dans la page panier.html /_\ */
 
 function command(){
     var nomSaisie = document.getElementById("nom").value;                  // on récupère les valeur du formulaire
@@ -38,6 +18,8 @@ function command(){
 
         var productArray = JSON.parse(localStorage.getItem("cart"));            // on récupère le tableau d'id commandandé
         var infoContact = new Contact(nomSaisie, prenomSaisie, adresseSaisie, villeSaisie, emailSaisie)     // création de l'objet contact pour l'envoie
+        console.log("cart = " + productArray)
+        console.log("contact = " + infoContact)
 
         fetch("http://localhost:3000/api/cameras/order",
         {
