@@ -16,10 +16,11 @@ function changeCart(){                                                  // funct
             cartNumber = JSON.parse(localStorage.getItem("cart")).length
             iconeContain.textContent = cartNumber
         }
+
+        console.log(cartNumber)
+        console.log(iconeContain)
     })
 }
-    
-changeCart()
 
 function addToCart(){                                           // fonction ajouter au panier
          
@@ -64,3 +65,4 @@ function removeAll() {                                          // fonction supp
 
 }
 
+changeCart()

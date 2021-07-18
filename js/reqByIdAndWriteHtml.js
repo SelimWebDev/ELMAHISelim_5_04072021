@@ -2,8 +2,7 @@ window.addEventListener('load', function (){
 
     //var idSelected = localStorage.getItem("id_selected"); // id enregitré par la page index
 
-    var url_string = window.location.href;
-    var url = new URL(url_string);
+    var url = new URL(window.location.href);
     var idSelected = url.searchParams.get("id");
 
     var name;
