@@ -1,6 +1,7 @@
 async function main (){
-    var reponseReq = await reqGetOneId()
-    buildAndWriteHtmlProduit(reponseReq)
+    var reponseReq = await reqGetOneId();
+    console.log(reponseReq);
+    buildAndWriteHtmlProduit(reponseReq);
 }
 
 main()

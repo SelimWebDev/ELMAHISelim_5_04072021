@@ -24,7 +24,18 @@ changeCart()
 //fonction associ a un bouton html
 function addToCart(){                                           // fonction ajouter au panier
          
-    var  oldCart = JSON.parse(localStorage.getItem("cart"))     // on recupere le cart du store et on le transforme en array
+     
+    if (JSON.parse(localStorage.getItem("cart")) == null){
+        localStorage.setItem("cart","[]")
+    }
+    else if (JSON.parse(localStorage.getItem("price")) == null){
+        localStorage.setItem("price","[]")
+    }
+    if (JSON.parse(localStorage.getItem("name")) == null){
+        localStorage.setItem("name","[]")
+    }
+    // on recupere le cart du store et on le transforme en array
+    var  oldCart = JSON.parse(localStorage.getItem("cart"))
     oldCart.push(localStorage.id_selected)                      // on y ajoute l'ID séléctionné du store
     localStorage.setItem("cart", JSON.stringify(oldCart))       // on transforme l'array en string et le renvoie au store
 

@@ -1,4 +1,4 @@
-async function buildAndWriteHtmlProduit(value){
+function buildAndWriteHtmlProduit(value){
     window.addEventListener('load', function() {
 
         var name = value.name;
@@ -6,6 +6,7 @@ async function buildAndWriteHtmlProduit(value){
         var price = value.price;
         var imageUrl = value.imageUrl;
         var option = value.lenses;
+        console.log(value)
 
         var img = document.getElementsByTagName("img"); // recupération de l'html
         var titre = document.getElementsByTagName("h2");

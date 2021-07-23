@@ -40,6 +40,8 @@ function command(){
         .then(function(value){
             console.log(value)
 
+            removeAll()
+
             window.location.href = "confirm.html?orderId=" + value.orderId
             
         })

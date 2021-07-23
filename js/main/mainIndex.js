@@ -1,5 +1,5 @@
-async function main (){
-    var reponseReq = await reqGetAll()
+function main (){
+    var reponseReq = reqGetAll()
     buildAndWriteHtmlIndex(reponseReq)
 }
 
